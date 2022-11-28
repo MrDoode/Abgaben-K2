@@ -1,0 +1,34 @@
+\section{Theoretischer Hintergrund}
+Bei der Hydrolyse von Harnstoff wirkt das Enzym Urease wie ein Katalysator.
+Bei der Reaktion entsteht Ammoniumkarbonat, welches im Wasser dissoziiert vorliegt.
+
+$$ H_3N-CO-NH_3 + 2(H_2O) \hspace{3mm}\underrightarrow{Urease}\hspace{3mm} {(H_4N)_2CO_3}_{(aq)}$$
+
+Die Leitfähigkeit der Lösung ist damit proportional zu dem Reaktionsfortschritt.
+Über die Bestimmung der Leitfähigkeit einer Lösung mit bekannter Konzentration an Ammoniumkarbonat kann so die Konzentration einer Lösung mit anderer Leitfähigkeit nach Gleichung \ref{UmrechnungLeitfähigkeitKonzentration} bestimmt werden.
+\begin{equation}
+	C_l = \kappa_l\cdot \frac{c_{Norm}}{\kappa_{Norm}}
+\label{UmrechnungLeitfähigkeitKonzentration}
+\end{equation}
+Über mehrere Messungen können nun die Reaktionsgeschwindigkeiten bei verschiedenen Konzentrationen bestimmt werden.
+Es ergibt sich ein Michaelis-Menten-Zusammenhang zwischen Anfangsgeschwindigkeit und Konzentration (Gleichung \ref{MichaelisMenten}).
+\begin{equation}
+	v=v_0\cdot\frac{[s]}{[s]+K_M}
+\label{MichaelisMenten}\\
+\end{equation}
+\begin{equation}
+	\frac{1}{V_0} = \frac{1}{V'_0} + \frac{K_M}{V'_0}\cdot \frac{1}{C{H,0}}
+\label{LineweaverBurk}\\
+\end{equation}
+Nach Lineweaver-Burk (Gleichung \ref{LineweaverBurk}) gibt die reziproke Auftragung der Anfangsgeschwindigkeiten eine Gerade, deren Abzissenabschnitt, $-K_M$ entspricht, während der Ordinatenabschnitt $\frac{1}{V_0}$ entspricht.
+Für $c_{H,0} << K_M$ kann die Geschwindigkeitskonstante dieses Versuchs nun über Gleichung \ref{K_V1} bestimmt werden.
+\begin{equation}
+	v_0=K_2\cdot c_{U,0}
+	\label{K_V1}
+\end{equation}
+Anschließend wird die Konzentrationsänderung des Ammoniumkarbonats über die Zeit beobachtet. 
+Nach dem Geschwindigkeitsgesetz 1. Ordnung (Gleichung \ref{gesch.gesetz}) ergibt die Auftragung von $\ln\left(\frac{[A_0]}{[A_t]}\right)$ über die Zeit eine Gerade deren Steigung der Geschwindigkeitskonstante entspricht.
+\begin{equation}
+	\ln{\left(\frac{[A_0]}{[A_t]}\right)=kt}
+\label{gesch.gesetz}
+\end{equation}

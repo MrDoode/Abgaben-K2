@@ -1,0 +1,164 @@
+\section{Auswertung}
+Bei der Auswertung sind wir auf erhebliche Unstimmigkeiten unserer Daten gestoßen.
+Im weiteren Verlauf sind konnte keine Michaelis-Menten Beziehung hergestellt werden.
+Die Auswertungsstrategie kann nicht angewandt werden, somit sind unsere Daten Unbrauchbar.\\ 
+Ausgewertet werden also die Daten unserer Partnergruppe.\\
+\subsection{Anfangsgeschwindigkeitsbestimmung}
+Die ersten 10 Messpunkte nach Hinzugabe des Enzyms sind in Tabelle \ref{Daten_V1} zu sehen.
+Es wurden in jedem Experiment mehr Daten aufgezeichnet als hier angegeben, allerdings im weiteren Verlauf nicht ausgewertet.
+Wie in Abbildung \ref{BSP_V0_Bestimmung} zu sehen, wurde anschließend für jede Messung eine Ausgleichsgerade für die ersten sechs Messpunkt und die Messpunkte zwei bis sieben berechnet.
+Für die Umrechnung von Leitfähigkeit zu Konzentration wurde Gleichung \ref{UmrechnungLeitfähigkeitKonzentration} verwendet.
+Die Leitfähigkeit $\kappa_{Norm}$ hat hier den Wert des Durchschnitts aller erhaltenen Leitfähigkeiten der Kalibrierlösung.
+Beispielhaft ergibt sich also für den ersten Messwert des ersten Messkolbens: 
+$$ \qty{4,5}{\micro\siemens\per\meter} \cdot \frac{\qty{4}{\milli\mole\per\liter}}{\qty{545,4}{\micro\siemens\per\meter}} = \qty{0,033}{\milli\mole\per\liter} $$
+Durch die Darstellung von Konzentration über die Zeit ist die erhaltene Steigung dieser Geraden direkt die Anfangsgeschwindigkeit dieser Messung. 
+Die beiden Werte spiegeln hier also eine angenommene obere und untere Grenze der Anfangsgeschwindigkeit wieder.
+Da Leit\-fähig\-keits\-mess\-gerät und Kalibrierlösung als fehlerfrei angesehen werden, ist auch die Konzentration fehlerfrei.
+\begin{figure}[t]
+\centering
+\resizebox{0.6\linewidth}{!}{%
+\input{../abb1.tex}}
+\caption{Zunahme von Ammoniumkarbonat über die Zeit für Maßkolben 1 (\qty{1}{\milli\liter} Harnstoff)}
+\label{BSP_V0_Bestimmung}
+\end{figure}
+
+\begin{table}[b]
+  \centering
+\vspace{5mm}
+  \begin{tabular}{l|cccccc}
+t/\unit{\second}& $\kappa_{1}/\unit{\micro\siemens\per\meter}$	& $\kappa_{2}/\unit{\micro\siemens\per\meter}$ & $\kappa_{3}/\unit{\micro\siemens\per\meter}$ & $\kappa_{5}/\unit{\micro\siemens\per\meter}$ & $\kappa_{25}/\unit{\micro\siemens\per\meter}$ & $\kappa_{40}/\unit{\micro\siemens\per\meter}$\\
+\vspace{-3mm}& \\
+\hline
+\hline
+5 & 4,5 & 2,5 & 4,6 & 2,8 & 2,7 & 7,8\\
+10 & 5,2 & 5,3 & 6,7 & 6,5 & 8,2 & 11,7\\
+15 & 5,7 & 7,5 & 8,6 & 9,4 & 12,2 & 15,4\\
+20 & 6,3 & 9,5 & 10,3 & 12,1 & 16 & 19,1\\
+25 & 6,8 & 11,2 & 11,8 & 14,6 & 19,8 & 22,7\\
+30 & 7,3 & 12,9 & 13,4 & 17,1 & 23,5 & 26,3\\
+35 & 7,8 & 14,5 & 14,8 & 19,6 & 27,2 & 29,8\\
+40 & 8,2 & 16,1 & 16,2 & 21,9 & 30,8 & 33,3\\
+45 & 8,7 & 17,6 & 17,6 & 24,2 & 34,3 & 36,7\\
+50 & 9,1 & 19 & 19 & 26,5 & 37,8 & 40\\
+    \hline& 
+  \end{tabular}
+  \caption{Leitfähigkeiten der Verdünnungsreihe nach Enzym-Hinzugabe}
+  \label{Daten_V1}
+\end{table}
+
+
+
+
+
+\subsection{Herstellung der Michaelis-Menten Beziehung}
+Die errechneten Anfangsgeschwindigkeiten, werden nun in Abhängigkeit der Eduktkonzentration Dargestellt.
+Zusehen ist dies in Abbildung \ref{MM-Beziehung}.
+\begin{figure}[t]
+\centering
+\input{../MM.tex}
+\caption{Michaelis-Menten Beziehung}
+\label{MM-Beziehung}
+\end{figure}
+Damit nun die Maximalgeschwindigkeit und die Michaelis-Menten Konstante bestimmt werden kann, muss zudem auch die Doppeltreziproke Visualisierung dieser Beziehung erstellt werden (Abb. \ref{LB_Auftragung}).
+Die Ausgleichsgeraden der Daten in dieser Darstellung gibt nach Gleichung \ref{LineweaverBurk}, den Zusammenhang mit den gesuchten Größen.
+
+\begin{figure}[t]
+\centering
+\input{../abb2.tex}
+\caption{Lineweaver-Burk Auftragung und Ausgleichgeraden}
+\label{LB_Auftragung}
+\end{figure}
+
+Für das Erstellen der Abbildungen ist die Konzentration der angesetzten Lösungen zu berechnen.
+Für Maßkolben eins ergibt sich:
+
+ $$C_2 = \frac{\qty{0,1}{\mole\per\liter} \cdot \qty{0,001}{\liter}}{\qty{0,051}{\liter}} = \qty{0,00196}{\mole\per\liter}$$
+
+Ermittelt wurden folgende Ausgleichsgeraden:
+
+\begin{center}
+\begin{tabular}{lcr}
+$2310,38\cdot \displaystyle{\frac{1}{c}} + 93930 = \displaystyle{\frac{1}{v_0}}$ &
+\hspace{5mm} &
+$2177,73\cdot \displaystyle{\frac{1}{c}} + 86987 = \displaystyle{\frac{1}{v_0}}$\\
+\end{tabular}
+\end{center}
+
+Für die Auswertung wurden die Werte des Maßkolbens mit \qty{2}{\milli\liter} Harstoff, nicht verwendet.
+Diese liegen Klar ausserhalb der gesuchten Michaelis-Menten Beziehung und müssen daher Anderweitug Fehlerbehaftet sein.
+Zurückzuführen ist dies liegt wahrscheinlich daran, dass zu viel Wasser in diesen Maßkolben gegeben wurde.
+Wie der Durchführung zu entnehmen ist.
+Weiter ergeben sich die in Tabelle \ref{erg1} dargestellten Ergebnisse.
+\begin{table}[t]
+\centering
+\begin{tabular}{l|ccr}
+	& Obergrenze & Untergrenze & MWA\\
+\hline
+\hline
+$K_M$		& \qty{39.944}{\mole\per\liter} 		& \qty{40,656}{\mole\per\liter} 		& $\pm\qty{0,356}{\mole\per\liter}$\\
+$V_{Max}$	& \qty{1,15e-5}{\mole\per\liter\per\second} 	& \qty{1,064e-5}{\mole\per\liter\per\second} 	& $\pm\qty{4,249e-7}{\mole\per\liter\per\second}$ \\
+$k_2$		& \qty[per-mode=power]{17,185}{\per\second} 	& \qty[per-mode=power]{15,915}{\per\second} 	& $\pm$\qty[per-mode=power]{0,635}{\per\second}\\
+\hline
+\end{tabular}
+\caption{Ergebnisse des ersten Versuchteils}
+\label{erg1}
+\end{table}
+
+
+\subsection{Geschwindigkeitskonstante der katalysierten Harnstoffumsetzung}
+Wie oben gezeigt, wurde die Urease Konzentration berechnet. 
+Diese ist gleich für alle Versuchsteile.
+In unserem Versuch wurde eine Urease Stammlösung von \qty{3,412e-5}{\mole\per\liter} angesetzt.
+Nach Versuchsstart hatte die Lösung dann eine Urease Konzentration von \qty{6,69e-7}{\mole\per\liter}.
+Verwendet wurden drei fehlerbehaftete Messgeräte. Die Waage hat einen Messfehler von \qty{1e-4}{\gram}, die Pipette hat einen Messfehler von \qty{3e-5}{\liter} und der Maßkolben einen Fehler von \qty{6e-5}{\liter}.
+
+Es wurde zuerst ein Stammlösungsfehler von $C_U = \qty{1,037e-7}{\mole\per\liter}$ und ein Messlösungsfehler von $C_{U2} = \qty{2,281e-8}{\mole\per\liter}$ ermittelt.
+Der Messlösungsfehler setzt sich aus dem Abwiegefehler und den jeweiligen Verdünnungsfehlern zusammen und wird wie folgt berechnet:
+\begin{align*}
+\Delta C_U &= \frac{1}{M} \cdot \sqrt{\left(\frac{1}{V}\cdot \Delta m \right)^2 + \left( - \frac{m}{V^2} \cdot \Delta V \right)^2}\\
+\Delta C_U &= \frac{1}{\qty{6e5}{\gram \per \mole}} \cdot   \sqrt{
+    \left(
+        \frac{1}{\qty{0.01}{\liter}}\cdot \qty{1e-4}{\gram}
+    \right)^2 +
+   \left(
+        -\frac{\qty{0.2047}{\gram}}{\qty{0.01}{\liter}^2} \cdot \qty{3e-5}{\liter}
+    \right)^2
+    }\\
+\Delta C_U &= \qty{1,037e-7}{\mole\per\liter}\\
+\Delta C_{U2} &= \sqrt{\left(\frac{1}{V_2}\cdot \sqrt{\left( V_1 \cdot \Delta C_1 \right)^2 + \left( C_1 \Delta V_1 \right)^2}\right)^2 +\left( - \frac{C_1 \cdot V_1}{V_2^2}\cdot \Delta V_2 \right)^2}\\
+A&=\left(\frac{\sqrt{( \qty{0,01}{\liter} \cdot \qty{3,412e-5}{\mole\per\liter} )^2 + \left( \qty{3,412}{\mole\per\liter} \qty{1e-5}{\liter} \right)^2}}{\qty{0,051}{\liter}}\cdot \right)^2 \\
+    B&=\left( - \frac{\qty{3,412e-5}{\mole\per\liter} \cdot\qty{0,01}{\liter}}{\qty{0,051}{\liter}^2}\cdot \qty{6e-5}{\liter} \right)^2\\
+    \Delta C_{U2} &= \sqrt{ A+ B} = \qty{2,281e-8}{\mole\per\liter}\\
+\end{align*}
+Weiter kann nun über die oben errechnete Maximalgeschwindigkeit die Geschwindigkeitskonstante nach errechnet werden:
+$$ k_2 = \frac{v_{Max}}{c_{U2}} = \frac{\qty{1,15}{\mole\per\liter\per\second}}{\qty{6,69}{\mole\per\liter}} = \qty[per-mode=power]{17,185}{\per\second}$$
+Der Fehler wird wie folgt berechnet:
+\begin{align*}
+ \Delta k_2 &= \sqrt{\left( \frac{1}{C_{U2}}\cdot \Delta V_0 \right)^2 + \left( - \frac{V_0}{{C_{U2}}^2} \cdot \Delta C_{U2} \right)^2}\\
+ \Delta k_2 &= \sqrt{\left( \frac{\qty{3.825e-7}{\mole \per \second \liter}}{\qty{6.69e-7}{\mole \per \liter}}  \right)^2 + \left( - \frac{\qty{1.126e-5}{\mole \per \second \liter}}{\qty{6.69e-7}{\mole \per \liter}}\cdot 2.281 \cdot 10^{-8} \frac{mol}{L} \right)^2}\\
+ \Delta k_2 &= 0.572 s^{-1}
+\end{align*}
+
+Die Ergebnisse dieses Versuchsteils sind ebenfalls in Tabelle \ref{erg1} zu sehen.
+Bewusst wurde hier die Mittelwertabweichung gewählt, anstelle des Einzelfehlers, da diese etwas größer als der Einzelfehler ist, sich aber noch im angemessenen Rahmen bewegt.
+
+
+\subsection{Geschwindigkeitskonstante der unkatalysierten Harnstoffumsetzung}
+Verwendet wurde hier eine \qty{0,5}{\mole\per\liter} Harnstofflösung.
+Deren Fehler wird als 0 angenommen.
+Wie in den vorherigen Versuchen wird auch hier das Leitfähigkeitsmessgerät ebenfalls als fehlerfrei angesehen.
+Unsere errechnete Geschwindigkeitskonstante ist in diesem Fall ohne Fehler.
+
+Für die Berechnung der Geschwindigkeitskonstante wird erst wie oben beschrieben aus der gemessenen Leitfähigkeit die Konzentration errechnet (Gleichung \ref{UmrechnungLeitfähigkeitKonzentration}).
+Alle Konzentrationen werden anschließend durch die erste gemessene Konzentration geteilt. 
+Danach wird der natürliche Logarithmus davon ermittelt.
+Es sind Werte in dem Bereich 0 bis 0,4 ermittelt worden, welche anschließend in Abhängigkeit der Zeit dargestellt worden sind.
+Eine Ausgleichsgerade durch die errechneten Werte gibt nach dem Geschwindigkeitsgesetz erster Ordnung (Gleichung \ref{gesch.gesetz}) mit seiner Steigung die Geschwindigkeitskonstante der Reaktion an.
+\begin{figure}[t]
+\centering
+\input{../abb3.tex}
+\caption{Logarithmische Auftragung der relativen Konzentrationsänderung über die Zeit}
+\label{lnWerte}
+\end{figure}
+In Abbildung \ref{lnWerte} sind unsere errechneten Werte sowie die Ausgleichsgerade eingezeichnet.
+Ermittelt wurde eine Geschwindigkeitskonstante von $0,000647\ s^{-1}$ 

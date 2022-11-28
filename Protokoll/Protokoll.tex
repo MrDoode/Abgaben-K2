@@ -1,0 +1,42 @@
+\documentclass[a4paper, 11pt]{article}
+
+\usepackage{fullpage}
+%\usepackage[inline]{showlabels}
+\usepackage[german]{babel}
+\usepackage[use-xspace,per-mode=fraction]{siunitx}
+\usepackage{gnuplot-lua-tikz}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{chemfig}
+\usepackage{biblatex}
+\usepackage{easyReview}
+
+
+\renewcommand{\arraystretch}{1.5}
+
+\bibliography{Protokoll.bib}
+
+\title{Praktikum der Physikalischen Chemie\\\large Hydrolyse von Harnstoff}
+\author{\\Samed Hür (huer@uni-bremen.de)\\Janosch Ehlers (jaeh@uni-bremen.de)\\\small Gruppe H\\ \\ \textbf{Betreuer:} Tobias Borrmann (tobias.borrmann@uni-bremen.de)}
+\date{21.11.2022}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\newpage
+
+\tableofcontents
+\thispagestyle{empty}
+\newpage
+\clearpage
+\pagenumbering{arabic} 
+
+\section{Einleitung}
+Ziel ist die Bestimmung der Geschwindigkeitskonstante bei der ureasekatalysierten und unkatalysierten Umsetzung von Harnstoff in Ammoniumkarbonat durch Messung der elektrischen Leitfähigkeit über die Zeit.\alert{Voll scheiße das ding}
+
+\input{Theorie.tex}
+\input{Durchführung.tex}
+\input{Auswertung.tex}
+\printbibliography
+\end{document}
